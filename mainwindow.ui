@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>506</width>
+    <height>399</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Arquivo</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>471</width>
+      <height>321</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QTextEdit" name="textEdit"/>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>506</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuArquivo">
+    <property name="title">
+     <string>Arquivo</string>
+    </property>
+    <addaction name="actionNovo"/>
+    <addaction name="actionAbrir"/>
+    <addaction name="actionSalvar"/>
+    <addaction name="actionSalvar_como"/>
+    <addaction name="separator"/>
+    <addaction name="actionFechar"/>
+   </widget>
+   <widget class="QMenu" name="menuEditar">
+    <property name="title">
+     <string>Editar</string>
+    </property>
+    <addaction name="actionCopiar"/>
+    <addaction name="actionColar"/>
+    <addaction name="actionRecortar"/>
+    <addaction name="separator"/>
+    <addaction name="actionDesfazer"/>
+    <addaction name="actionRefazer"/>
+   </widget>
+   <widget class="QMenu" name="menuSobre">
+    <property name="title">
+     <string>Sobre</string>
+    </property>
+    <addaction name="actionSobre"/>
+   </widget>
+   <widget class="QMenu" name="menuFormatar">
+    <property name="title">
+     <string>Formatar</string>
+    </property>
+    <addaction name="actionFonte"/>
+    <addaction name="actionCor"/>
+    <addaction name="actionCor_de_Fundo"/>
+   </widget>
+   <addaction name="menuArquivo"/>
+   <addaction name="menuEditar"/>
+   <addaction name="menuFormatar"/>
+   <addaction name="menuSobre"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionAbrir">
+   <property name="text">
+    <string>Abrir</string>
+   </property>
+  </action>
+  <action name="actionSalvar">
+   <property name="text">
+    <string>Salvar</string>
+   </property>
+  </action>
+  <action name="actionSalvar_como">
+   <property name="text">
+    <string>Salvar como</string>
+   </property>
+  </action>
+  <action name="actionFechar">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/images/quitIcon.png</normaloff>:/images/quitIcon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Fechar</string>
+   </property>
+  </action>
+  <action name="actionCopiar">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/images/copyIcon.png</normaloff>:/images/copyIcon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Copiar</string>
+   </property>
+  </action>
+  <action name="actionColar">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/images/pasteIcon.png</normaloff>:/images/pasteIcon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Colar</string>
+   </property>
+  </action>
+  <action name="actionRecortar">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/images/cutIcon.png</normaloff>:/images/cutIcon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Recortar</string>
+   </property>
+  </action>
+  <action name="actionDesfazer">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/images/undoIcon.png</normaloff>:/images/undoIcon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Desfazer</string>
+   </property>
+  </action>
+  <action name="actionRefazer">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/images/redoIcon.png</normaloff>:/images/redoIcon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Refazer</string>
+   </property>
+  </action>
+  <action name="actionSobre">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/images/aboutIcon.png</normaloff>:/images/aboutIcon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Sobre</string>
+   </property>
+  </action>
+  <action name="actionNovo">
+   <property name="text">
+    <string>Novo</string>
+   </property>
+  </action>
+  <action name="actionFonte">
+   <property name="text">
+    <string>Fonte</string>
+   </property>
+  </action>
+  <action name="actionCor">
+   <property name="text">
+    <string>Cor da Fonte</string>
+   </property>
+  </action>
+  <action name="actionCor_de_Fundo">
+   <property name="text">
+    <string>Cor de Fundo</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
